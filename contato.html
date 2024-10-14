@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Great+Vibes&family=Playwrite+FR+Moderne:wght@100..400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Meu Website</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-with-background">
+        <div class="header-content">
+            <h1>ArqVision</h1>
+        </div>
+    </header>
+    
+    <!-- Navbar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="servicos.html">Serviços</a>
+        <a href="contato.html" class="active">Contato</a>
+    </nav>
+
+    <!-- Conteudo principal -->
+    <div class="containerflex">
+        <div class="contact-container">
+            <h2>Entre em Contato Conosco</h2>
+            <form action="#">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+
+    <!-- Ícone do WhatsApp -->
+    <a href="https://api.whatsapp.com/send?phone=5551995987877" target="_blank" class="whatsapp-icon">
+        <img src="assets/whatsapp.png" alt="Ícone do WhatsApp">
+    </a>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="novidades">
+                <h3>NOVIDADES?</h3>
+                <p>Siga-nos em nossas redes sociais para ficar por dentro de promoções, ações e novidades =)</p>
+                <p>Dúvidas ou sugestões, mande-nos um e-mail: contato@aroamdecafe.com.br</p>
+                <!-- Ícones das redes sociais -->
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+    
+            <div class="footer-contact">
+                <h3 class="contato">CONTATO:</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Exemplo 1234 - Ivoti / RS</p>
+                <p><i class="fas fa-phone"></i> xx xxxx-xxxx</p>
+                <p><i class="fab fa-whatsapp"></i> xx xxxx-xxxx</p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contato@arqvision.com.br">contato@arqvision.com.br</a></p>
+            </div>
+        </div>
+    
+        <p>&copy; 2024 Meu Website. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

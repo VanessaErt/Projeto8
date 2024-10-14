@@ -1,0 +1,515 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+:root {
+    --bejemaisclaro: #F2BC8D;
+    --bejemaisescuro: #BF946F; 
+    --bege: #C7B084;
+    --begeclaro: #A6936D;
+    --marrom: #59331D;
+    --cinza: #BFB6B0;
+    --marromclaro: #594842;
+    --pretoclaro: #1c1c1c;
+    --white: #fff;
+    --cinzaescuro: #333;
+    --cinzamaisclaro: #666;
+    --cinzaclaro: #ccc;
+}
+
+/* Estilos para o Header */
+.header-with-background {
+    background-image: url('../assets/banner-header.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content {
+    position: relative;
+}
+
+.header-content h1 {
+    font-family: "Playwrite FR Moderne", cursive;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 3rem;
+}
+
+header h1:hover {
+    color: var(--cinza);
+}
+
+/* Estilos para o Navbar */
+nav {
+    background-color: var(--pretoclaro); 
+    text-align: center; 
+    padding: 10px 0; 
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none; 
+    font-family: "Roboto", sans-serif;
+    font-size: 18px; 
+    margin: 0 15px; 
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: var(--bejemaisescuro);
+}
+
+nav a.active {
+    color: var(--cinza);
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: #f0f0f0; 
+}
+
+.content {
+    flex: 1; 
+    padding-right: 20px; 
+}
+
+.image {
+    flex: 0 0 200px; 
+}
+
+.image img {
+    width: 100%; 
+    height: auto; 
+}
+
+h2, p {
+    margin: 0; 
+}
+
+/* Estilos para o história */
+.history-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 600px;
+    margin: 0;
+    background-color: var(--background-color);
+    padding: 20px;
+    overflow: hidden;
+    background-image: url('../assets/banner-historia.png'); 
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+}
+
+.history-content {
+    width: 80%; 
+    max-width: 800px; 
+    background-color: var(--cinza);
+    padding: 20px;
+    transition: transform var(--transition-speed) ease;
+    position: relative; 
+    z-index: 1; 
+    text-align: center; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.history-content h2 {
+    font-size: 2rem;
+    color: var(--marromclaro);
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+.history-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--pretoclaro);
+    text-align: justify;
+}
+
+.history-container:hover .history-content {
+    transform: translateY(-10px);
+    background-color: var(--white);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    z-index: 2; 
+}
+
+/* Estilos para nossos trabalhos */
+.image-container {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    text-align: center; 
+    background-color: var(--pretoclaro);
+    padding: 40px 40px; 
+}
+
+.image-container h1 {
+    color: var(--white); 
+    font-size: 2rem; 
+    margin-bottom: 10px; 
+    padding: 10px; 
+    border: 2px solid var(--white); 
+    border-radius: 8px; 
+    display: inline-block; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-top: 0; 
+    margin-bottom: 45px;
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+    border: 2px solid var(--white); 
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.btn-servicos {
+    display: inline-block;
+    background-color: var(--bege); 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 4px; 
+    margin-top: 45px;
+}
+
+.btn-servicos:hover {
+    background-color: var(--begeclaro); 
+}
+
+/* Estilos para a Equipe */
+.equipe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    background-color: var(--white);
+    padding: 40px 20px; 
+}
+
+.membro {
+    width: 300px; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out;
+    padding: 40px 20px; 
+}
+
+.membro:hover {
+    transform: translateY(-5px); 
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 15px;
+    border: 4px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.membro h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.membro p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Estilos para a página de serviços */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.service {
+    width: calc(33.33% - 20px); 
+    max-width: 300px; 
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.service:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service h3 {
+    margin-top: 10px;
+    font-size: 1.5rem; 
+    color: var(--cinzaescuro);
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    max-height: 3.6em; 
+    line-height: 1.8em; 
+}
+
+.service p {
+    color: var(--cinzamaisclaro);
+    line-height: 1.6;
+}
+
+/* Estilos para o ícone-container */
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap; 
+    background-color: var(--cinza);
+}
+
+.icon-box {
+    width: 300px;
+    height: 300px;
+    background-color: var(--square-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.icon-box i {
+    font-size: 2rem;
+    color: var(--icon-color);
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.icon-box p {
+    margin: 0;
+    padding: 0;
+    color: var(--icon-color);
+    transition: color 0.3s ease;
+}
+
+.icon-box:hover {
+    background-color: var(--highlight-color);
+    transform: rotate(45deg);
+}
+
+.icon-box:hover i, .icon-box:hover p {
+    color: var(--white);
+}
+
+/* Estilos para a página de contatos */
+.containerflex {
+    background-color: var(--cinza);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 600px; 
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; 
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--marrom);
+}
+
+.contact-container form {
+    width: 100%; 
+    max-width: 400px; 
+    margin: 0 auto; 
+}
+
+.contact-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    color: var(--marromclaro);
+}
+
+.contact-container input[type="text"],
+.contact-container input[type="email"],
+.contact-container textarea {
+    width: calc(100% - 20px); 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cinzaclaro);
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.contact-container textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.contact-container input[type="submit"] {
+    background-color: var(--bejemaisescuro);
+    color: var(--white);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.contact-container input[type="submit"]:hover {
+    background-color: var(--bejemaisclaro);
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+}
+
+/* Estilos para o Footer */
+footer {
+    background-color: var(--pretoclaro);
+    padding: 20px;
+    color: var(--white);
+    text-align: left;
+}
+
+footer p {
+    text-align: center;
+    color: var(--cinza);
+    margin: 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.novidades, .footer-contact {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.novidades p {
+    text-align: left;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.novidades h3, .footer-contact h3 {
+    margin-left: 160px;
+}
+
+.footer-contact p, .novidades p {
+    color: var(--cinza);
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    line-height: 1.6; 
+    margin-left: 160px;
+}
+
+.footer-contact a {
+    color: var(--cinza); 
+    text-decoration: none; 
+}
+
+.footer-contact a:hover {
+    color: var(--bejemaisclaro);
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: var(--white);
+}
+
+/* Estilos para os ícones das redes sociais */
+.redes-sociais {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os ícones */
+    padding-left: 160px;
+    
+}
+
+.social-icon {
+    font-size: 35px; 
+    color: var(--white); 
+}
+
+/* Media query para telas menores (até 768px) */
+@media screen and (max-width: 768px) {
+    .service {
+        width: 100%; 
+        max-width: none; 
+    }
+
+    .service h3 {
+        font-size: 1.2rem; 
+        -webkit-line-clamp: 3; 
+        max-height: 5.4em; 
+    }
+}
